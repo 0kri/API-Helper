@@ -3,19 +3,25 @@ let loginForm = document.getElementById("loginForm");
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let username = document.getElementById("username");
-  let password = document.getElementById("password");
+  let triviaAmount = document.getElementById("triviaAmount");
+  let triviaCategory = document.getElementById("username");
+  let triviaDifficulty = document.getElementById("triviaDifficulty");
+  let triviaType = document.getElementById("username");
 
-  if (username.value == "" || password.value == "") {
-    alert("Ensure you input a value in both fields!");
+  if (triviaAmount.value == "" ) {
+    alert("Ensure you input a value in all fields!");
   } else {
-    // perform operation with form input
     alert("This form has been successfully submitted!");
     console.log(
-      `This form has a username of ${username.value} and password of ${password.value}`
+      `This form has a Number of Questions: ${triviaAmount.value}, Category of: ${triviaCategory.value} and Difficulty is set to ${triviaDifficulty.value}. Type of answers will be ${triviaType.value}.`
     );
 
-    username.value = "";
-    password.value = "";
+    triviaAmount.value = "";
+    triviaCategory.value = "";
+    triviaDifficulty.value = "";
+    triviaType.value = "";
+
   }
 });
+
+console.log(triviaCategory.value)
