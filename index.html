@@ -8,6 +8,40 @@
     <title>API Helper</title>
 </head>
 <body>
+    <div class="container">
+        <form action="" id="loginForm">
+            <h1>API Helper</h1>
+            <label for="trivia-amount">Number of Questions: </label>
+            <input type="number" name="trivia-amount" id="trivia-amount" class="form-control" min="1" max="3">
+            <br>
+            <label for="trivia-category">Select Category: </label>
+            <select name="trivia-category" class="form-control">
+                <option value="any">Any Caregory</option>
+                <option value="1">Sports</option>
+                <option value="2">Animals</option>
+                <option value="3">Science</option>
+                <option value="4">Mythology</option>
+                <option value="5">Music</option>
+            </select>
+            <br>
+            <label for="trivia-difficulty">Select Difficulty: </label>
+            <select name="trivia-difficulty" class="form-control">
+                <option value="any">Any Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br>
+            <label for="trivia-type">Select Type: </label>
+            <select name="trivia-type" class="form-control">
+                <option value="any">Any Type</option>
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True / False</option>
+            </select>
+            <br>
+            <button class="btn" id="sumbitBtn">Generate API URL</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
