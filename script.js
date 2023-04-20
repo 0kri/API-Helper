@@ -29,7 +29,6 @@ loginForm.addEventListener("submit", (e) => {
 });
 
 async function fetchData() {
-  // const { url, amount, category, diffuculty, type } = apiData
   
   apiData.amount = triviaAmount.value
   apiData.category = triviaCategory.value
